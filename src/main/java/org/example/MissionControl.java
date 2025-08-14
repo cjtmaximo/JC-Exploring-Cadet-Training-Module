@@ -22,5 +22,14 @@ public class MissionControl {
 
         // Method from the abstract Drone class
         bravo_1.land();
+
+        System.out.println("\n\n--- Deploying Advanced Fixed-Wing Unit ---");
+        FixedWingDrone phoenix_7 = new FixedWingDrone("Phoenix-7");
+        phoenix_7.takeOff();
+        phoenix_7.fly();
+        phoenix_7.takePicture();
+        phoenix_7.interceptSignal();
+        phoenix_7.record4kVideo(); // Calls the overridden version
+        phoenix_7.land();
     }
 }
